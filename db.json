@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Produto A",
+      "description": "Uma descrição detalhada do produto A",
+      "price": 99.99,
+      "category": "Eletrônicos",
+      "featured": true,
+      "creationDate": "2024-01-01T12:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "name": "Produto B",
+      "description": "Uma descrição detalhada do produto B",
+      "price": 49.99,
+      "category": "Livros",
+      "featured": false,
+      "creationDate": "2024-02-15T10:30:00.000Z"
+    },
+    {
+      "id": 3,
+      "name": "Produto C",
+      "description": "Uma descrição detalhada do produto C",
+      "price": 199.99,
+      "category": "Roupas",
+      "featured": true,
+      "creationDate": "2024-03-01T15:45:00.000Z"
+    },
+    {
+      "id": "54ac",
+      "name": "Teste",
+      "description": "Breve descrição",
+      "price": 1300,
+      "category": "Absoluta",
+      "featured": true,
+      "creationDate": "2025-03-14T01:12"
+    }
+  ]
+}
