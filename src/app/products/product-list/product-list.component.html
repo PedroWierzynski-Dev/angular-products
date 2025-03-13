@@ -1,0 +1,47 @@
+<div class="products-list">
+    <h2>Lista de Produtos</h2>
+
+    <div class="products-form">
+        <div class="prodcuts-search">
+            <input
+                type="text"
+                placeholder="Pesquisar por nome"
+                [(ngModel)]="searchTerm"
+                (ngModelChange)="onSearchTermChanged()"
+            />
+            <select [(ngModel)]="selectedCategory" (change)="searchProducts()">
+              <option value="">Todas as Categorias</option>
+              <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+            </select>
+        </div>
+          
+          <button class="btn btn-attus" [routerLink]="['/products/new']">Criar Novo Produto</button>
+    </div>
+    
+    <div class="row">
+        <div class="col-lg-3 col-sm-12 col-md-6" *ngFor="let product of products">
+            <div class="card product-card">
+                <div class="w-100 d-flex justify-content-between align-items-start">
+                    <h3>{{ product.name }}</h3>
+                    <div class="badge badge-emphasis" *ngIf="product.featured">
+                        Destaque
+                    </div>
+                </div>
+                <div>
+                    <div class="w-100 d-flex justify-content-between align-items-center mb-3">
+                        <p>Preço: {{ product.price | currency }}</p>
+                        <p>Categoria: {{ product.category }}</p>
+                    </div>
+                    <div class="emphasis-container" [class.expanded]="product.expanded">
+                        <p>{{ product.description }}</p>
+                        <span>Criado em: {{ product.creationDate | date }}</span>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <button class="btn btn-attus" (click)="toggleDescription(product)">{{ product.expanded ? 'Ver Menos' : 'Ver Mais' }}</button>
+                    <button class="btn btn-danger" (click)="deleteProduct(product.id)">Excluir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

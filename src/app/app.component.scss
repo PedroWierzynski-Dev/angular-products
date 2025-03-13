@@ -1,0 +1,32 @@
+.app-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    color: #fff;
+
+    .app-header{
+        display: flex;
+        justify-content: space-between;
+        height: 55px;
+        align-items: center;
+    
+        img{
+            width: 150px;
+            height: auto;
+        }
+    }
+
+    .app-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 30px;
+        padding-top: 1rem;
+
+        p{
+            font-size: 0.75rem;
+            color: #ffffffa2;
+        }
+    }
+}

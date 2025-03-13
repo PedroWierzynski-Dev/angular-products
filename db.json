@@ -26,15 +26,6 @@
       "category": "Roupas",
       "featured": true,
       "creationDate": "2024-03-01T15:45:00.000Z"
-    },
-    {
-      "id": "54ac",
-      "name": "Teste",
-      "description": "Breve descrição",
-      "price": 1300,
-      "category": "Absoluta",
-      "featured": true,
-      "creationDate": "2025-03-14T01:12"
     }
   ]
 }
